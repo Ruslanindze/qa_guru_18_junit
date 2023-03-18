@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'qa.guru'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'com.codeborne:selenide:6.12.2'
+}
+
+test {
+    useJUnitPlatform()
+}
